@@ -1,0 +1,2 @@
+ProfilesController	/Applications/XAMPP/xamppfiles/htdocs/twitterclone/app/Http/Controllers/ProfilesController.php	/^class ProfilesController extends Controller$/;"	class	line:8
+show	/Applications/XAMPP/xamppfiles/htdocs/twitterclone/app/Http/Controllers/ProfilesController.php	/^      public function show(User $user)$/;"	function	line:10
