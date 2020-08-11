@@ -18,5 +18,8 @@
         <p class="text-sm">
             {{ $tweet->body }}
         </p>
+
+        @include('_like-buttons')
+
     </div>
 </div>

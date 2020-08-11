@@ -10,7 +10,7 @@
 
         <div class="flex justify-between items-center mb-4">
             <div>
-                <h2 class="font-bold text-2xl mb-0">{{ $user->name }}</h2>
+                <h2 class="font-bold text-2xl mb-0">{{ $user->username }}</h2>
                 <p class="text-sm">Joined {{ $user->created_at->diffForHumans() }}</p>
             </div>
 
@@ -53,10 +53,10 @@
             src="{{ $user->avatar }}"
             alt=""
             class="rounded-full mr-2 absolute"
-            style="width: 150px; left: calc(50% - 75px); top: 138px"
+            style="width: 150px; height: 150px; left: calc(50% - 75px); top: 138px"
         >
     </header>
   @include('timeline', [
-    'tweets' => $user->tweets
+    'tweets' => $tweets
   ])
 @endsection

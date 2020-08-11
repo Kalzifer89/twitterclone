@@ -28,8 +28,12 @@ Route::middleware('auth')->group(function(){
   Route::post('profiles/{user:username}/follows', 'FollowsController@store');
   Route::get('profiles/{user:username}/edit', 'ProfilesController@edit');
   Route::patch('profiles/{user:username}/edit', 'ProfilesController@update');
+
+  Route::post('/tweets/{tweet}/like', 'TweetLikesController@store');
+  Route::delete('/tweets/{tweet}/like', 'TweetLikesController@destroy');
 });
 
 Route::get('profiles/{user:username}', 'ProfilesController@show')->name('profile');
+Route::get('/explore', 'ExploreController@index');
 
 Auth::routes();
